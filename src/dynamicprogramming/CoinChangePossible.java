@@ -1,5 +1,6 @@
 package dynamicprogramming;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class CoinChangePossible {
@@ -12,7 +13,9 @@ public class CoinChangePossible {
 				memo[j] += memo[j-coins[i]];
 			}
 		}
+		System.out.println(Arrays.toString(memo));
 		return memo[amount];
+		
 	}
 
 	public static void main(String[] args) {

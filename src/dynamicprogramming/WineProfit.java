@@ -11,7 +11,7 @@ public class WineProfit {
 		
 		int profit1 =  profit(year+1, be+1, en, p)+year*p[be];
 		int profit2 =  profit(year+1, be, en-1, p)+year*p[en];
-		if(cache[be][en] != 0) return cache[be][en];
+		if(cache[be][en] != 0)  return cache[be][en];
 		
 		return cache[be][en] = Math.max(profit2, profit1);
 	}

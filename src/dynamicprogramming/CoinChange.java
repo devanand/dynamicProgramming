@@ -15,11 +15,11 @@ public class CoinChange {
 			for(int coin:coins) {
 				if(coin<=i && memo[i-coin]<memo[i]) {
 					memo[i] = memo[i-coin]+1;
-					int temp = memo[i];
 				}
 			}
 		}
 		System.out.println(memo[dollars]);
+		System.out.println(Arrays.toString(memo));
 	}
 	
 	public static void main(String[] args) {

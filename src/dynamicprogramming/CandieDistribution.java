@@ -1,6 +1,5 @@
 package dynamicprogramming;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class CandieDistribution {
@@ -51,7 +50,6 @@ public class CandieDistribution {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(Integer.MAX_VALUE);
 		Scanner s = new Scanner(System.in);
 		int l = Integer.parseInt(s.nextLine());
 		int grades[] = new int[l];

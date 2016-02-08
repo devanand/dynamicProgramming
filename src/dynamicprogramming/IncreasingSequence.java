@@ -4,10 +4,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.math.BigInteger;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class IncreasingSequence {
-
 	static void increasingSequence(BigInteger a[]) {
 		long change=0;
 		for(int i=1;i<a.length;i++) {
